@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now</title>
+</head>
+<body>
+    <script>
+        function a(title,price){
+            this.title=title;
+            this.price=price;
+            this.show=show;
+            function show()
+            {
+                document.write("Название:"+this.title+"<br>");
+                document.write("Цена:"+this.price);
+            }
+        }
+        let book=new a("Манга",500);
+        book.show();
+    </script>
+</body>
+</html>

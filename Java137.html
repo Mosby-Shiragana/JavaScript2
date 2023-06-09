@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two arrEx</title>
+</head>
+<body>
+    <script>
+        function mediana(arr,i)
+        {
+            if(i%2==0)
+            {
+                var a=i/2;
+                var b=arr[a];
+                var c=arr[a-1];
+                var med=(b+c)/2;
+                return med;
+            }
+            else
+            {
+                var a= Math.floor(i/2);
+                return arr[a];
+            }
+        }
+        var arr1=[1,2,5,4,6];
+        var arr2=[8,2,5,9,5];
+        var d=arr1.length;
+        var e=arr2.length;
+        var f=d+e;
+        const arr3=arr1.concat(arr2);
+        arr3.sort(function(a,b){
+            return a-b;
+        });
+        document.write("Медиана равна "+ mediana(arr3,f));
+    </script>
+</body>
+</html>

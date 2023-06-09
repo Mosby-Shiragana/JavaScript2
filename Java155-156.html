@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lyaaa</title>
+</head>
+<body>
+    <script>
+        function Car(name,model,color){
+            this.name=name;
+            this.model=model;
+            this.color=color;
+        }
+        let myCar=new Car;
+        myCar.name="Ferrari";
+        myCar.model="500";
+        myCar.color="green";
+        Car.prototype.owner="Vunya";
+        Car.prototype.adress="Elsewhere"
+        alert(myCar.name+" "+myCar.model+" "+myCar.color+" "+myCar.owner+" "+myCar.adress);
+    </script>
+</body>
+</html>

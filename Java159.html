@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard</title>
+</head>
+<body>
+    <script>
+        function Tour(Chislo,Dni,Tarif){
+            this.Chislo=Chislo;
+            this.Dni=Dni;
+            this.Tarif=Tarif;
+        }
+            let m_list=new Tour();
+        m_list["Chislo"]="16";
+        m_list["Dni"]="12";
+        m_list["Tarif"]="35.000 каждый";
+        for (let x in m_list)
+        document.write(m_list[x]+"<br>"); 
+    </script>
+</body>
+</html>

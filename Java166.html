@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator</title>
+</head>
+<body>
+    <script>
+        let option;
+        for(option in navigator){
+            document.write(option+':'+navigator[option]+'<br>');
+        }
+        document.write("<hr>")
+        function userDet(){
+            document.write("<br><br>Browser name:"+navigator.userAgent+"<br>");
+            document.write("<br><br>Browser language:"+navigator.language+"<br>");
+            document.write("<br><br>OC name:"+navigator.oscpu+"<br>");
+            document.write("<br><br>Is cookie enabled:"+navigator.cookieEnabled+"<br>");
+            document.write("<br><br>Is internet on:"+navigator.nLine+"<br>");
+        }
+        userDet();
+    </script>
+</body>
+</html>
